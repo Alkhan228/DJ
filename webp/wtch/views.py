@@ -14,4 +14,5 @@ def about_page(request):
 def news_page(request):
     nudes = About_news.objects.all()
     return render(request, 'wtch/news.html', {'nudes': nudes})
+# Nudes are very useful
 # Create your views here.

@@ -1,4 +1,4 @@
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, JsonResponse
 from django.shortcuts import render, redirect
 from .models import About_leadership, About_news,About_comments
 from .forms import AboutCommentsForm
@@ -21,9 +21,13 @@ def thanks_pagee(request):
         form = AboutCommentsForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('thanks_pagee')
-    else:
-        form = AboutCommentsForm()
-    return render(request, 'thanks_pagee.html', {'form': form})
+            context = {'success': True}
+        else:
+            context = {'success': False, 'errors': form.errors}
+            form = AboutCommentsForm()
+            context = {'form': form}
+        return render(request, 'wtch/index.html', context)
 # Nudes are very useful
 # Create your views here.
+
+

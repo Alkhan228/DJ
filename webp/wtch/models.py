@@ -20,4 +20,12 @@ class About_news(models.Model):
     def __str__(self):
         return self.title
 
+
+class About_comments(models.Model):
+    name = models.CharField(max_length=50)
+    email = models.EmailField()
+    text = models.TextField()
+
+    def __str__(self):
+        return f"{self.name} ({self.email}): {self.text}"
     # Create your models here.

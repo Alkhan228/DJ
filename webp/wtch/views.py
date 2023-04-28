@@ -21,7 +21,7 @@ def thanks_pagee(request):
         form = AboutCommentsForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('thanks_pagee')
+              
     else:
         form = AboutCommentsForm()
     return render(request, 'thanks_pagee.html', {'form': form})

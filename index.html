@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClockWatch</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="hooter">
+        <img src="img/Burger.svg" alt="" class="hooter-burger">
+        <div class="hooter-left">
+
+          <a href="#" class="hooter-logo">
+            <img src="img/photo_2023-03-25_23-00-59.jpg" alt="" class="hooter-logo-text">
+          </a>
+        </div>
+
+        <div class="hooter-right">
+          <ul class="hooter-navs">
+            <a href="/about.html" class="about-link">
+              <li id="about-uss" href="/about.html" class="hooter-navs-text">О нас</li>
+            </a>
+            <a href="/news.html" class="about-link">
+              <li id="about-uss" class="hooter-navs-text">Новости</li>
+            </a>
+            <a href="#social-section" class="about-link">
+              <li href="" id="about-uss" class="hooter-navs-text">Контакты</li>
+            </a>
+            <span class="hooter-vector-search"></span>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+  </header>
+
+  <!-- <div class="popup-hooter">
+    <div class="container">
+      <div class="popup-hooter-body">
+        <div class="popup-hooter-content">
+          <h1 class="contact-text">Контакты</h1>
+          <div class="contact-logos">
+            <li class="contact-logogs-li">
+              <a href="" class="contact-link">
+                <img src="https://img.icons8.com/material/144/null/tiktok.png" class="contact-img" />
+              </a>
+            </li>
+            <li class="contact-logogs-li">
+              <a href="" class="contact-link">
+                <img src="https://img.icons8.com/material/144/null/instagram-new--v1.png" class="contact-img" />
+              </a>
+            </li>
+            <li class="contact-logogs-li">
+              <a href="" class="contact-link">
+                <img src="https://img.icons8.com/material/144/null/telegram-app.png" class="contact-img" />
+              </a>
+            </li>
+            <li class="contact-logogs-li">
+              <a href="" class="contact-link">
+                <img src="https://img.icons8.com/material/144/null/whatsapp--v1.png" class="contact-img" />
+              </a>
+            </li>
+            <li class="contact-logogs-li">
+              <a href="" class="contact-link">
+                <img src="https://img.icons8.com/windows/128/null/gmail.png" class="contact-img" />
+              </a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <section class="main">
+    <div class="container main-container">
+      <div class="main-slider">
+        <div class="main-slider-box">
+          <img src="img/first.jpg.png" alt="" class="main-first">
+        </div>
+        <div class="main-slider-box">
+          <img src="img/four.jpg" alt="" class="main-second">
+        </div>
+        <div class="main-slider-box">
+          <img src="img/five.jpg" alt="" class="main-third">
+        </div>
+        <div class="main-slider-box">
+          <img src="img/six.jpg" alt="" class="main-third">
+        </div>
+        <div class="main-slider-box">
+          <img src="img/seven.jpg" alt="" class="main-third">
+        </div>
+      </div>
+
+      <div class="main-text-block">
+        <h1 class="main-title">Выбери <br> свое <br> время</h1>
+
+        <a href="#" id="login-open" class="main-button">Заказать часы</a>
+      </div>
+
+      <div class="popup-user" id="login-modal">
+        <div class="user-body">
+          <div class="user-content">
+            <div class="user-close" id="login-close">X</div>
+            <h1 class="user-text">
+              LOGIN
+            </h1>
+            <input type="text" class="user-name" placeholder="Введите имя">
+            <br>
+            <input type="text" class="user-password" placeholder="Введите пароль">
+            <br>
+            <button class="next">next</button>
+            <a class="reges" id="registor" href="#login">Regestration</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup-sign" id="sign-modal">
+        <div class="user-body sign-body">
+          <div class="sign-content">
+            <div class="user-close" id="sign-close">X</div>
+            <h1 class="user-text">
+              REGESTRATION
+            </h1>
+            <input type="text" class="user-name" placeholder="Введите имя">
+            <br>
+            <input type="text" class="user-password" placeholder="Введите почту">
+            <br>
+            <input type="text" class="user-mail" placeholder="Введите почту">
+            <br>
+            <button class="next">sign up</button>
+            <a class="reges" id="login" href="registor">login</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="slider-catalog">
+    <div class="container">
+
+      <h1 class="slider-h1">Каталог</h1>
+
+      <div class="slider-box">
+
+        <a href="#popup" id="open-modal-btn" data-modal-button="modal-1" class="popup-link">
+          <div class="slider-item">
+            <div class="slider-item-border">
+              <div class="slider-item-image">
+                <img src="/img/tissotgentelmanPowermatic80.webp" alt="" class="slider-item-image-watches">
+              </div>
+              <div class="slider-item-text">Tissot Gentleman Powermatic 80</div>
+              <div class="slider-item-price">$499</div>
+            </div>
+          </div>
+        </a>
+
+
+
+
+
+        <a href="#popup2" id="open-modal-btn-2" data-modal-button="modal-2" class="popup-link">
+          <div class="slider-item">
+            <div class="slider-item-border">
+              <div class="slider-item-image">
+                <img src="/img/casiotank.png" alt="" class="slider-item-image-watches">
+              </div>
+              <div class="slider-item-text">Casio Tank</div>
+              <div class="slider-item-price">$249</div>
+            </div>
+          </div>
+        </a>
+
+
+        <a href="#popup3" id="open-modal-btn-3" data-modal-button="modal-3" class="popup-link">
+          <div class="slider-item">
+            <div class="slider-item-border">
+              <div class="slider-item-image">
+                <img src="/img/AQ-800ECGG-4A.webp" alt="" class="slider-item-image-watches">
+              </div>
+              <div class="slider-item-text">Casio Vintage</div>
+              <div class="slider-item-price">$389</div>
+            </div>
+          </div>
+        </a>
+
+
+
+
+        <a href="#popup4" id="open-modal-btn-4" data-modal-button="modal-4" class="popup-link">
+          <div class="slider-item">
+            <div class="slider-item-border">
+              <div class="slider-item-image">
+                <img src="/img/tisot-prx.avif" alt="" class="slider-item-image-watches">
+              </div>
+              <div class="slider-item-text">Tissot PRX 40mm</div>
+              <div class="slider-item-price">$799</div>
+            </div>
+          </div>
+        </a>
+
+
+
+        <a href="#popup5" id="open-modal-btn-5" data-modal-button="modal-5" class="popup-link">
+          <div class="slider-item">
+            <div class="slider-item-border">
+              <div class="slider-item-image">
+                <img src="/img/tradition.avif" alt="" class="slider-item-image-watches">
+              </div>
+              <div class="slider-item-text">Tissot Tradition 5.5</div>
+              <div class="slider-item-price">$299</div>
+            </div>
+          </div>
+
+        </a>
+
+
+
+        <a href="#popup6" id="open-modal-btn-6" data-modal-button="modal-6" class="popup-link">
+          <div class="slider-item">
+            <div class="slider-item-border">
+              <div class="slider-item-image">
+                <img src="/img/patekphilippe.avif" alt="" class="slider-item-image-watches">
+              </div>
+              <div class="slider-item-text">Patek Philippe</div>
+              <div class="slider-item-price">$1499</div>
+            </div>
+          </div>
+        </a>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="popup_bg" id="my-modal">
+      <div class="popup_body">
+        <div class="popup_content">
+          <img src="/img/tissotgentelmanPowermatic80.webp" alt="" class="popup_img">
+          <div class="popup_text">
+            <h1 class="popup_h1">Tissot Gentleman Powermatic 80</h1>
+            <li class="popup_text_li">- тип: механические</li>
+            <li class="popup_text_li">- способ отображения времени: аналоговый (стрелки)</li>
+            <li class="popup_text_li">- материал корпуса: сталь</li>
+            <li class="popup_text_li">- противоударные: Нет</li>
+            <li class="popup_text_li">- цвет: серебристый</li>
+            <h2 class="popup_price">$499</h2>
+            <div class="popup-button">BUY</div>
+          </div>
+          <div class="popup_close" id="modal-close">X</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="popup_bg" id="my-modal-2">
+      <div class="popup_body">
+        <div class="popup_content">
+          <img src="/img/casiotank.png" alt="" class="popup_img">
+          <div class="popup_text">
+            <h1 class="popup_h1">Casio Tank</h1>
+            <li class="popup_text_li">- тип: механические</li>
+            <li class="popup_text_li">- способ отображения времени: аналоговый (стрелки)</li>
+            <li class="popup_text_li">- материал корпуса: сталь</li>
+            <li class="popup_text_li">- противоударные: Нет</li>
+            <li class="popup_text_li">- цвет: серебристый</li>
+            <h2 class="popup_price">$249</h2>
+            <div class="popup-button">BUY</div>
+          </div>
+          <div class="popup_close" id="modal-close-2">X</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="popup_bg" id="my-modal-3">
+      <div class="popup_body">
+        <div class="popup_content">
+          <img src="/img/AQ-800ECGG-4A.webp" alt="" class="popup_img">
+          <div class="popup_text">
+            <h1 class="popup_h1">Casio Vintage</h1>
+            <li class="popup_text_li">- тип: механические</li>
+            <li class="popup_text_li">- способ отображения времени: аналоговый (стрелки)</li>
+            <li class="popup_text_li">- материал корпуса: сталь</li>
+            <li class="popup_text_li">- противоударные: Нет</li>
+            <li class="popup_text_li">- цвет: серебристый</li>
+            <h2 class="popup_price">$389</h2>
+            <div class="popup-button">BUY</div>
+          </div>
+          <div class="popup_close" id="modal-close-3">X</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="popup_bg" id="my-modal-4">
+      <div class="popup_body">
+        <div class="popup_content">
+          <img src="/img/tisot-prx.avif" alt="" class="popup_img">
+          <div class="popup_text">
+            <h1 class="popup_h1">Tissot PRX 40mm</h1>
+            <li class="popup_text_li">- тип: механические</li>
+            <li class="popup_text_li">- способ отображения времени: аналоговый (стрелки)</li>
+            <li class="popup_text_li">- материал корпуса: сталь</li>
+            <li class="popup_text_li">- противоударные: Нет</li>
+            <li class="popup_text_li">- цвет: серебристый</li>
+            <h2 class="popup_price">$799</h2>
+            <div class="popup-button">BUY</div>
+          </div>
+          <div class="popup_close" id="modal-close-4">X</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="popup_bg" id="my-modal-5">
+      <div class="popup_body">
+        <div class="popup_content">
+          <img src="/img/tradition.avif" alt="" class="popup_img">
+          <div class="popup_text">
+            <h1 class="popup_h1">Tissot Tradition 5.5</h1>
+            <li class="popup_text_li">- тип: механические</li>
+            <li class="popup_text_li">- способ отображения времени: аналоговый (стрелки)</li>
+            <li class="popup_text_li">- материал корпуса: сталь</li>
+            <li class="popup_text_li">- противоударные: Нет</li>
+            <li class="popup_text_li">- цвет: серебристый</li>
+            <h2 class="popup_price">$299</h2>
+            <div class="popup-button">BUY</div>
+          </div>
+          <div class="popup_close" id="modal-close-5">X</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="popup_bg" id="my-modal-6">
+      <div class="popup_body">
+        <div class="popup_content">
+          <img src="/img/patekphilippe.avif" alt="" class="popup_img">
+          <div class="popup_text">
+            <h1 class="popup_h1">Patek Philippe</h1>
+            <li class="popup_text_li">- тип: механические</li>
+            <li class="popup_text_li">- способ отображения времени: аналоговый (стрелки)</li>
+            <li class="popup_text_li">- материал корпуса: сталь</li>
+            <li class="popup_text_li">- противоударные: Нет</li>
+            <li class="popup_text_li">- цвет: серебристый</li>
+            <h2 class="popup_price">$1499</h2>
+            <div class="popup-button">BUY</div>
+          </div>
+          <div class="popup_close" id="modal-close-6">X</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <section class="popups">
+    <div id="popup" data-modal class="popup hidden">
+      <div class="popup-body">
+        <div class="popup-content">
+          <a href="#" data-modal-close class="popup-close">X</a>
+          <img src="/img/tissotgentelmanPowermatic80.webp" alt="" class="popup-image">
+          <div class="popup-second-face">
+            <div class="popup-title">Tissot Gentleman Powermatic 80</div>
+            <div class="popup-price">$499</div>
+            <div class="popup-text">
+              <li class="popup-text-li">- тип: механические</li>
+              <li class="popup-text-li">- способ отображения времени: аналоговый (стрелки)</li>
+              <li class="popup-text-li">- материал корпуса: сталь</li>
+              <li class="popup-text-li">- противоударные: Нет</li>
+              <li class="popup-text-li">- цвет: серебристый</li>
+            </div>
+            <div class="popup-button">BUY</div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div id="popup2" data-modal class="popup hidden">
+      <div class="popup-body">
+        <div class="popup-content">
+          <a href="#" data-modal-close class="popup-close">X</a>
+          <img src="/img/casiotank.png" alt="" class="popup-image">
+          <div class="popup-second-face">
+            <div class="popup-title">Casio Tank</div>
+            <div class="popup-price">$499</div>
+            <div class="popup-text">
+              <li class="popup-text-li">- тип: механические</li>
+              <li class="popup-text-li">- способ отображения времени: аналоговый (стрелки)</li>
+              <li class="popup-text-li">- материал корпуса: сталь</li>
+              <li class="popup-text-li">- противоударные: Нет</li>
+              <li class="popup-text-li">- цвет: серебристый</li>
+            </div>
+            <div class="popup-button">BUY</div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+    <div id="popup3" data-modal class="popup hidden">
+      <div class="popup-body">
+        <div class="popup-content">
+          <a href="#" data-modal-close class="popup-close">X</a>
+          <img src="/img/AQ-800ECGG-4A.webp" alt="" class="popup-image">
+          <div class="popup-second-face">
+            <div class="popup-title">Casio Vintage</div>
+            <div class="popup-price">$389</div>
+            <div class="popup-text">
+              <li class="popup-text-li">- тип: механические</li>
+              <li class="popup-text-li">- способ отображения времени: аналоговый (стрелки)</li>
+              <li class="popup-text-li">- материал корпуса: сталь</li>
+              <li class="popup-text-li">- противоударные: Нет</li>
+              <li class="popup-text-li">- цвет: серебристый</li>
+            </div>
+            <div class="popup-button">BUY</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup4" data-modal class="popup hidden">
+      <div class="popup-body">
+        <div class="popup-content">
+          <a href="#" data-modal-close class="popup-close">X</a>
+          <img src="/img/tisot-prx.avif" alt="" class="popup-image">
+          <div class="popup-second-face">
+            <div class="popup-title">Tissot PRX 40mm</div>
+            <div class="popup-price">$799</div>
+            <div class="popup-text">
+              <li class="popup-text-li">- тип: механические</li>
+              <li class="popup-text-li">- способ отображения времени: аналоговый (стрелки)</li>
+              <li class="popup-text-li">- материал корпуса: сталь</li>
+              <li class="popup-text-li">- противоударные: Нет</li>
+              <li class="popup-text-li">- цвет: серебристый</li>
+            </div>
+            <div class="popup-button">BUY</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup5" data-modal class="popup hidden">
+      <div class="popup-body">
+        <div class="popup-content">
+          <a href="#" data-modal-close class="popup-close">X</a>
+          <img src="/img/tradition.avif" alt="" class="popup-image">
+          <div class="popup-second-face">
+            <div class="popup-title">Tissot Tradition</div>
+            <div class="popup-price">$299</div>
+            <div class="popup-text">
+              <li class="popup-text-li">- тип: механические</li>
+              <li class="popup-text-li">- способ отображения времени: аналоговый (стрелки)</li>
+              <li class="popup-text-li">- материал корпуса: сталь</li>
+              <li class="popup-text-li">- противоударные: Нет</li>
+              <li class="popup-text-li">- цвет: серебристый</li>
+            </div>
+            <div class="popup-button">BUY</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup6" data-modal class="popup hidden">
+      <div class="popup-body">
+        <div class="popup-content">
+          <a href="#" data-modal-close class="popup-close">X</a>
+          <img src="/img/patekphilippe.avif" alt="" class="popup-image">
+          <div class="popup-second-face">
+            <div class="popup-title">Patek Philippe</div>
+            <div class="popup-price">$1499</div>
+            <div class="popup-text">
+              <li class="popup-text-li">- тип: механические</li>
+              <li class="popup-text-li">- способ отображения времени: аналоговый (стрелки)</li>
+              <li class="popup-text-li">- материал корпуса: сталь</li>
+              <li class="popup-text-li">- противоударные: Нет</li>
+              <li class="popup-text-li">- цвет: серебристый</li>
+            </div>
+            <div class="popup-button">BUY</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section> -->
+  <section class="thanks-popup">
+    <div class="container">
+      <div id="open-thanks"  class="thanks-body">
+        <div class="thanks-content">
+          <div id="close-thanks" class="thanks-close">X</div>
+          <div class="thanks-design">
+
+            <h1 class="thanks-h1">
+              <li class="thanks-li">thanks</li>
+              <li class="thanks-li">for</li>
+              <li class="thanks-li">the</li>
+              <li class="thanks-li">feedback</li>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-first-block">
+        <a href="#" class="footer-logo">
+          <img src="/img/logo_black.PNG" alt="" class="footer-logo-text">
+        </a>
+        <ul class="footer-navs">
+          <li class="footer-navs-text">О нас</li>
+          <li class="footer-navs-text">Каталог</li>
+          <li class="footer-navs-text">Отзывы</li>
+          <li class="footer-navs-text">Контакты</li>
+
+        </ul>
+        <div id="social-section" class="footer-social-links">
+          <a href="" class="icon-fb"><img src="img/icons8-tiktok-96.svg" class="icon-1"></img></a>
+          <a href="https://t.me/clockbuy" class="icon-vk"><img src="img/icons8-telegram-app-96.svg"
+              class="icon-2"></img></a>
+          <a href="https://www.instagram.com/invites/contact/?i=1bfvw3bnknvid&utm_content=qrupmi7" class="icon-ig"><img
+              src="img/icons8-instagram-96.svg" class="icon-3"></img></a>
+        </div>
+      </div>
+      <div class="footer-second-block">
+        <div class="footer-title">Оставить отзыв</div>
+        <form action="" class="footer-form">
+          <input class="input-name" type="name" placeholder="Фамилия, имя и отчество*">
+          <input class="input-email" type="E-mail" placeholder="E-mail*">
+          <input class="input-text" type="text" placeholder="Сообщение">
+          <div class="footer-btn-checkbox">
+            <div href="" id="click-button" class="footer-button">Отправить данные</div>
+            <div class="checkbox-block">
+              <input class="input-checkbox" type="checkbox">
+              <div class="checkbox-text">Согласен на обработку данных</div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="footer-last-block">
+        Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
+        факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели
+        развития. Таким образом, консультация с широким активом обеспечивает широкому кругу (специалистов)
+        участие в формировании стандартных подходов.
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+
+</html>

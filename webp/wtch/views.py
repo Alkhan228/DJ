@@ -26,7 +26,8 @@ def thanks_pagee(request):
             context = {'success': False, 'errors': form.errors}
             form = AboutCommentsForm()
             context = {'form': form}
-        return render(request, 'wtch/index.html', context)
+
+        return render(request, 'wtch/thanks_pagee.html', context)
 # Nudes are very useful
 # Create your views here.
 

@@ -146,7 +146,6 @@ window.addEventListener('keydown', (e) => {
 document.getElementById("click-button").addEventListener(
     "click", function () {
         document.getElementById("open-thanks").classList.add("open")
-
     })
 document.getElementById("close-thanks").addEventListener("click",function(){
     document.getElementById("open-thanks").classList.remove("open")

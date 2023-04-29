@@ -111,48 +111,49 @@
       <div class="main-text-block">
         <h1 class="main-title">Выбери <br> свое <br> время</h1>
 
-        <a href="#" id="login-open" class="main-button">Заказать часы</a>
+        <a href="#zakaz" id="login-open" class="main-button">Заказать часы</a>
       </div>
-
-      <div class="popup-user" id="login-modal">
-        <div class="user-body">
-          <div class="user-content">
-            <div class="user-close" id="login-close">X</div>
-            <h1 class="user-text">
-              LOGIN
-            </h1>
-            <input type="text" class="user-name" placeholder="Введите имя">
-            <br>
-            <input type="text" class="user-password" placeholder="Введите пароль">
-            <br>
-            <button class="next">next</button>
-            <a class="reges" id="registor" href="#login">Regestration</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="popup-sign" id="sign-modal">
-        <div class="user-body sign-body">
-          <div class="sign-content">
-            <div class="user-close" id="sign-close">X</div>
-            <h1 class="user-text">
-              REGESTRATION
-            </h1>
-            <input type="text" class="user-name" placeholder="Введите имя">
-            <br>
-            <input type="text" class="user-password" placeholder="Введите почту">
-            <br>
-            <input type="text" class="user-mail" placeholder="Введите почту">
-            <br>
-            <button class="next">sign up</button>
-            <a class="reges" id="login" href="registor">login</a>
-          </div>
-        </div>
-      </div>
-
     </div>
-
   </section>
+<!--      <div class="popup-user" id="login-modal">-->
+<!--        <div class="user-body">-->
+<!--          <div class="user-content">-->
+<!--            <div class="user-close" id="login-close">X</div>-->
+<!--            <h1 class="user-text">-->
+<!--              LOGIN-->
+<!--            </h1>-->
+<!--            <input type="text" class="user-name" placeholder="Введите имя">-->
+<!--            <br>-->
+<!--            <input type="text" class="user-password" placeholder="Введите пароль">-->
+<!--            <br>-->
+<!--            <button class="next">next</button>-->
+<!--            <a class="reges" id="registor" href="#login">Regestration</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <div class="popup-sign" id="sign-modal">-->
+<!--        <div class="user-body sign-body">-->
+<!--          <div class="sign-content">-->
+<!--            <div class="user-close" id="sign-close">X</div>-->
+<!--            <h1 class="user-text">-->
+<!--              REGESTRATION-->
+<!--            </h1>-->
+<!--            <input type="text" class="user-name" placeholder="Введите имя">-->
+<!--            <br>-->
+<!--            <input type="text" class="user-password" placeholder="Введите почту">-->
+<!--            <br>-->
+<!--            <input type="text" class="user-mail" placeholder="Введите почту">-->
+<!--            <br>-->
+<!--            <button class="next">sign up</button>-->
+<!--            <a class="reges" id="login" href="registor">login</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+
+
+
 
 
 
@@ -511,12 +512,31 @@
 
   </section> -->
 
+   <section class="thanks-popup">
+    <div class="container">
+      <div id="open-thanks"  class="thanks-body">
+        <div class="thanks-content">
+          <div id="close-thanks" class="thanks-close">X</div>
+          <div class="thanks-design">
 
-  <footer class="footer">
+            <h1 class="thanks-h1">
+              <li class="thanks-li">thanks</li>
+              <li class="thanks-li">for</li>
+              <li class="thanks-li">the</li>
+              <li class="thanks-li">feedback</li>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+   <footer class="footer">
     <div class="container footer-container">
       <div class="footer-first-block">
         <a href="#" class="footer-logo">
-          <img src="{% static 'wtch/img/logo_black.PNG' %}" alt="" class="footer-logo-text">
+          <img src="/img/logo_black.PNG" alt="" class="footer-logo-text">
         </a>
         <ul class="footer-navs">
           <li class="footer-navs-text">О нас</li>
@@ -525,7 +545,7 @@
           <li class="footer-navs-text">Контакты</li>
 
         </ul>
-        <div class="footer-social-links">
+        <div id="social-section" class="footer-social-links">
           <a href="" class="icon-fb"><img src="{% static 'wtch/img/icons8-tiktok-96.svg' %}" class="icon-1"></img></a>
           <a href="https://t.me/clockbuy" class="icon-vk"><img src="{% static 'wtch/img/icons8-telegram-app-96.svg' %}"
               class="icon-2"></img></a>
@@ -534,20 +554,28 @@
         </div>
       </div>
       <div class="footer-second-block">
-        <div class="footer-title">Оставить заявку</div>
-        <form action="{% url 'thanks_pagee' %}" method="post" class="footer-form">
-  {% csrf_token %}
-  <input class="input-name" type="text" placeholder="Фамилия, имя и отчество*" name="name" id="id_name">
-  <input class="input-email" type="email" placeholder="E-mail*" name="email" id="id_email">
-  <input class="input-text" type="text" placeholder="Сообщение" name="text" id="id_text">
-  <div class="footer-btn-checkbox">
-    <button class="footer-button">Отправить данные</button>
-    <div class="checkbox-block">
-      <input class="input-checkbox" type="checkbox">
-      <div class="checkbox-text">Согласен на обработку данных</div>
-    </div>
-  </div>
-</form>
+        <div id="zakaz" class="footer-title">Заказать часы</div>
+        <form action="" class="footer-form">
+          <input class="input-name" type="name" placeholder="Фамилия, имя и отчество*">
+          <input class="input-email" type="E-mail" placeholder="E-mail*">
+          <input class="input-text" type="text" placeholder="Сообщение">
+          <div class="footer-btn-checkbox">
+            <div href="
+
+
+
+
+
+
+
+
+" id="click-button" class="footer-button">Отправить данные</div>
+            <div class="checkbox-block">
+              <input class="input-checkbox" type="checkbox">
+              <div class="checkbox-text">Согласен на обработку данных</div>
+            </div>
+          </div>
+        </form>
       </div>
       <div class="footer-last-block">
         Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого

@@ -118,27 +118,36 @@ window.addEventListener('keydown', (e) => {
     }
 })
 
-//LOGIN
-//open
-document.getElementById("login-open").addEventListener("click", function () {
-    document.getElementById("login-modal").classList.add("open")
-})
-//close X
-document.getElementById("login-close").addEventListener("click", function () {
-    document.getElementById("login-modal").classList.remove("open")
-})
+////LOGIN
+////open
+//document.getElementById("login-open").addEventListener("click", function () {
+//    document.getElementById("login-modal").classList.add("open")
+//})
+////close X
+//document.getElementById("login-close").addEventListener("click", function () {
+//    document.getElementById("login-modal").classList.remove("open")
+//})
 //close ESC
-
-window.addEventListener('keydown', (e) => {
-    if (e.key === "Escape") {
-        document.getElementById("login-modal").classList.remove("open")
-    }
-})
+//
+//window.addEventListener('keydown', (e) => {
+//    if (e.key === "Escape") {
+//        document.getElementById("login-modal").classList.remove("open")
+//    }
+//})
 
 //SIGN UP
+//
+//document.getElementById("login").addEventListener("click", function () {
+//    document.getElementById("login-modal").classList.remove("open")
+//    document.getElementById("sign-modal").classList.add("open")
+//})
 
-document.getElementById("login").addEventListener("click", function () {
-    document.getElementById("login-modal").classList.remove("open")
-    document.getElementById("sign-modal").classList.add("open")
+
+document.getElementById("click-button").addEventListener(
+    "click", function () {
+        document.getElementById("open-thanks").classList.add("open")
+
+    })
+document.getElementById("close-thanks").addEventListener("click",function(){
+    document.getElementById("open-thanks").classList.remove("open")
 })
-

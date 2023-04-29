@@ -779,3 +779,59 @@ transition: all 0.5s ease 0s;
     padding-top: 20px;
     cursor: pointer;
 }
+
+.thanks-popup {}
+
+.container {}
+
+.thanks-body {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99998;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.thanks-content {
+    width: 1200px;
+    height: 600px;
+    background-color: #fff;
+
+
+}
+
+.thanks-design {
+    display: flex;
+    flex-direction: column;
+}
+
+.thanks-close {
+    display: flex;
+    flex-direction: row-reverse;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.thanks-li {
+    list-style: none;
+}
+
+.thanks-h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 110px;
+    margin: 0;
+}
+.thanks-body.open{
+    visibility: visible;
+    opacity: 1;
+}

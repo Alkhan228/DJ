@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+.hooter-logo-text {
+    width: 200px;
+    margin-left: 20px;
+}
+
+
+.header {
+    height: 100px;
+    padding-top: 10px;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1770px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header-container {
+    background-color: #fff;
+}
+
+.hooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hooter-burger {
+    display: none;
+}
+
+.hooter-left {}
+
+.hooter-logo {}
+
+.hooter-logo-image {}
+
+.hooter-right {
+    width: 600px;
+}
+
+.about-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#about-uss:hover {
+    color: #8400ff;
+    transition: 0.3s;
+}
+
+.hooter-navs {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hooter-navs-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333;
+}
+
+.hooter-navs-text:not(:last-child) {
+    margin-right: 85px;
+}
+
+.hooter-vector-search {
+    background: url('/evklid/img/Search.svg');
+    width: 25px;
+    height: 25px;
+}
+
+/* MAIN */
+
+.thanks-for-buy {
+}
+.container {
+}
+.buy-body {
+}
+.buy-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.buy-text {
+    margin-top: 200px;
+    font-size: 120px;
+    font-weight: 900;
+    text-align: center;
+}
+.back-to-home {
+    margin-top: 200px;
+    font-size: 25px;
+    font-weight: 500;
+    border: none;
+    background-color: #000000;
+    width: 270px;
+    height: 60px;
+    color: #ffffff;
+    margin-right: 265px;
+    text-align: center;
+    align-items: center;
+    padding-top: 15px;
+}
+.back-to-home:hover{
+    background-color: #fff;
+    color: #000000;
+    transition: 0.6s;
+}

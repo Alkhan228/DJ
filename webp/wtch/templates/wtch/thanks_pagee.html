@@ -1,10 +1,76 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClockWatch</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="{% static 'wtch/css/reset.css' %}">
+  <link rel="stylesheet" href="{% static 'wtch/css/normalize.css' %}">
+  <link rel="stylesheet" href="{% static 'wtch/css/thanks.css' %}">
 </head>
+
 <body>
-<h1>Спасибо за отзыв!</h1>
+  <header class="header">
+    <div class="container header-container">
+      <div class="hooter">
+        <img src="img/Burger.svg" alt="" class="hooter-burger">
+        <div class="hooter-left">
+
+          <a href="#" class="hooter-logo">
+            <img src="{% static 'wtch/img/photo_2023-03-25_23-00-59.jpg' %}" alt="" class="hooter-logo-text">
+          </a>
+        </div>
+
+        <div class="hooter-right">
+          <ul class="hooter-navs">
+            <a href="/index.html" class="about-link">
+                <li id="about-uss" href="/index.html" class="hooter-navs-text">Главная</li>
+              </a>
+            <a href="/about.html" class="about-link">
+              <li id="about-uss" href="/about.html" class="hooter-navs-text">О нас</li>
+            </a>
+            <a href="/news.html" class="about-link">
+              <li id="about-uss" class="hooter-navs-text">Новости</li>
+            </a>
+            <a href="#social-section" class="about-link">
+              <li href="" id="about-uss" class="hooter-navs-text">Контакты</li>
+            </a>
+            <span class="hooter-vector-search"></span>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+  </header>
+
+<main class="thanks-for-buy">
+    <div class="container">
+        <div class="buy-body">
+            <div class="buy-content">
+                <h1 class="buy-text">
+                    Thank you for your purchase
+                </h1>
+                <a id="back" href="{% url 'main' %}" class="back-to-home">
+                    Back to HOME
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script defer src="js/main.js"></script>
 </body>
+
 </html>
